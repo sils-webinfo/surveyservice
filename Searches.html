@@ -1,0 +1,30 @@
+<html>
+	<h1> Searches </h1>
+	
+	<h2> User Search</h2>
+	<form method="get" action="/usersearch">
+		<input type="text" name="username" value=""/>
+		<input type="text" name="uid" value=""/>
+		<input type="submit"/>
+	</form>
+	
+	<h2> Respondent Search</h2>
+	<form method="get" action="/respondentsearch">
+		<input type="text" name="respondentname" value=""/>
+		<input type="text" name="rid" value=""/>
+		<input type="submit"/>
+	</form>
+	
+	<h2> Survey Search</h2>
+	<form method="get" action="/surveysearch">
+		<input type="text" name="surveyid" value=""/>
+		<input type="submit"/>
+	</form>
+	<h2> Contacts Search</h2>
+	<form method="get" action="/contactsearch">
+		RID: <input type="text" name="rid" value=""/>
+		UID: <input type="text" name="uid" value=""/>
+		Date: <input type="datetime" name="contact-datetime" value=""/>
+		<input type="submit"/>
+	</form>
+</html>
