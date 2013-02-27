@@ -1,0 +1,39 @@
+<html>
+<h1>Survey </h1>
+<div id ="survey">
+	<form method ="post" action="/results" class="survey">
+		<li>Interview ID: <input type="text" name="intid" value="" required="true"/>
+			User:<input type="text" name="uname" value="" required="true"/>
+			UID:<input type="text" name="uid" value="" required="true"/>
+		</li>
+		<li>Respondent:<input type="text" name="rname" value="" required="true"/>
+			RID:<input type="text" name="rid" value="" required="true"/>
+			Termination Date:<input type="datetime" name="termdatetime" value=""/>
+			Hire Date:<input type="datetime" name="hiredatetime" value=""/>
+			Supervisor:<input type="text" name="supname" value=""/>
+			Supervisor ID:<input type="text" name="sid" value=""/>
+		</li>
+		<ol>
+			<li>Q1 Text:<input type="text" name="Q1response" value=""/></li>
+			<li>Q2 Text:<input type="text" name="Q2response" value=""/></li>
+			<li>Q3 Text:<input type="text" name="Q3response" value=""/></li>
+		</ol>
+			<input type="submit" value="Submit"/>
+	</form>
+</div>
+	
+	<h3> Add/Update Questions</h3>
+	<div id="questions">
+		<form method="post" action="/survey" class="question">
+			Q1:<input type="text" name="Q1-text" value=""/>
+			Q2:<input type="text" name="Q2-text" value=""/>
+			Q3:<input type="text" name="Q3-text" value=""/>
+			<input type="submit" value="Submit"/>
+		</form>
+	</div>
+	<h3> Remove a Question </h3>
+	<a rel="edit" action="/survey" href="survey/questions">RemoveQuestion</>			
+</html>
+	
+			
+			
