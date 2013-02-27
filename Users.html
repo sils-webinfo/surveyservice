@@ -1,0 +1,29 @@
+<html>
+	<h2> List of All Users </h2>
+	<div id ="users">
+		<ol class="all">
+			<li class="user">
+				<a rel="user" href="UID.html">User1Name</a>
+				<span class="UID">UID</span>
+				<span class="title">JobTitle</span>
+			</li>
+			...
+			<li class="user">
+				<a rel="user" href="UID.html">UserNName</a>
+				<span class="UID">UID</span>
+				<span class="title">JobTitle</span>
+			</li>
+		</ol>
+	</div>
+	
+	<h3> Add/Update a User </h3>
+	<form name="update-user" action="/users" class="user-update">
+			Name: <input type="text" name="name" value="" required="true"/>
+			ID: <input type="text" name="userid" value="" required="true"/>
+			Job Title: <input type="text" name="title" value=""/>
+			<input type="submit" value="Submit"/>
+	</form>
+	
+	<h3> Remove a User </h3>
+	<a rel="edit" action="/users" href="users/uid">RemoveUser</>
+</html>
