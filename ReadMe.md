@@ -31,24 +31,37 @@ class attribute values:
 - *survey* - Applied to a LI tag. A survey of a single respondent
 - *result* - Applied to a LI tag. A result of a single survey 
 - *all* - Applied to a UL tag. A list of users, respondents, contacts, surveys or results
+- *userAdd* -Applied to a FORM tag to add a new user.
+ 	- INPUT [text]=Uname
+    - INPUT [text]=UID
+    - INPUT [text]=email
+    - INPUT [text]=jobtitle
 - *userUpdate* - Applied to a FORM tag. An update to user. Should contain these elements:
     - INPUT [text]=Uname
     - INPUT [text]=UID
     - INPUT [text]=email
     - INPUT [text]=jobtitle
+- *respondentAdd* - Applied to a FORM tag. Adding a respondent should include these elements:
+    - INPUT [text]=Rname
+    - INPUT [text]=RID
+    - INPUT [text]=Rphone
+    - INPUT [text]=supervisor
 - *respondentUpdate* - Applied to a FORM tag. An update to respondent should include these elements:
     - INPUT [text]=Rname
     - INPUT [text]=RID
     - INPUT [text]=Rphone
     - INPUT [text]=supervisor
 - *surveyUpdate* - Applied to a FORM tag. An update to survey form.
+- *surveyAdd* - Applied to a FORM tag. A reference to add a new survey.
 - *contactdatetime* - Applied to a SPAN tag. Contains the date-time a contact was made.
 - *interviewdatetime* - Applied to a SPAN tag. The date-time an interview was completed (survey form submitted).
 - *question* - Applied to an LI tag. A single question on survey.
 - *qResponse* - Applied to a FORM tag. A response to question on survey.           
 - *userSearch* - Applied to a FORM tag. A link template to search all users.
-- *respondentSearch* - Applied to a FORM tag. A link template to search all respondents.              - *surveySearch* - Applied to a FORM tag. A link template to search all surveys completed.
-- *resultsSearch* - Applied to a FORM tag. A link template to search all survey results.                                                                                                      - 
+- *respondentSearch* - Applied to a FORM tag. A link template to search all respondents.              
+- *surveySearch* - Applied to a FORM tag. A link template to search all surveys completed.
+- *resultSearch* - Applied to a FORM tag. A link template to search all survey results.                                                                                                      - 
+
 name attribute values:
 -
 - *Uname* - Applied to an INPUT [text] element. The full name of a user.
@@ -63,17 +76,25 @@ name attribute values:
 - *termdatetime* - Applied to an INPUT [datetime] element. The date a respondent resigned.
 - *Supervisor* - Applied to an INPUT [text] element. The Supervisor of a respondent.
 - *SID* - Applied to an INPUT [text] element.The employee ID of a respondent's supervisor.
+- *question* - Applied to an INPUT [text] element. The text associated with a question on the survey form.
 - *Q{num}Response* - Applied to INPUT [text] elements. This would capture responses to each question on survey form.
 
 rel attribute values:
 -
 - *index* - Applied to A tag. A reference to starting URI for application
 - *user* -  Applied to A tag. A reference to a user representation
-- *respondent* -  Applied to A tag. A reference to a respondent representatio
+- *userAdd* - Applied to A tag. A reference to userAdd FORM.
+- *userUpdate* -  Applied to A tag. A reference to userUpdate FORM.
+- *respondent* -  Applied to A tag. A reference to a respondent representation
+- *respondentUpdate* - Applied to A tag. A reference to respondentUpdate FORM.
 - *contact* - Applied to A tag. A reference to a contact representation
 - *survey* - Applied to A tag. A reference to a survey representation
+- *surveyAdd* - Applied to A tag. A reference to a surveyAdd FORM.
 - *result* -Applied to A tag. A reference to a result representation
-
+- *userSearch* - Applied to A tag. A reference to userSearch FORM.
+- *respondentSearch* - Applied to A tag. A reference to respondentSearch FORM.              
+- *surveySearch* - Applied to A tag. A reference to surveySearch FORM.
+- *resultSearch* - Applied to A tag. A reference to resultSearch FORM.
 
   
     
