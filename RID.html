@@ -1,8 +1,12 @@
+<!DOCTYPE html>
 <html>
+  <meta charset="UTF-8">
+  <title> Respondent Name </title>
 	<div id ="respondents">
 		<ul class ="single">
-		<h2> Display a single respondent</h2>
 			<li class="respondent">
+
+        <h2> Display a single respondent</h2>
 				<span class="Rname">Respondent Name</span>
 				<span class="RID">Rid</span>
 				Telephone: <span class="telephone">Telephone</span>
@@ -10,49 +14,51 @@
 				Hire Date: <span class="hiredatetime">HireDate Date</span>
 				Supervisor Name:<span class="supervisor">SupervisorName</span>
 				Supervisor ID:<span class="supid">99999</span>
-			</li>
+
+		    <h3> Update Respondent </h3>
+			  <form name="update" action="/users" class="user-update">
+				  Name: <input type="text" name="Rname" value="" required="true"/>
+				  ID: <input type="text" name="RID" value="" required="true"/>
+				  Telephone: <input type="tel" name="telephone" value=""</>
+				  Term Date: <input type="datetime" name=termdatetime value=""</>
+				  Hire Date: <input type="datetime" name=hiredatetime value=""</>
+				  Supervisor Name:<input type="text" name="Sname" value=""</>
+				  Supervisor ID: <input type="text" name="SID" value="" required="true"/>
+				  <input type="submit" value="Update"/>
+			  </form>
 			
-			
-		<h3> Update Respondent </h3>
-			<form name="update" action="/users" class="user-update">
-				Name: <input type="text" name="Rname" value="" required="true"/>
-				ID: <input type="text" name="RID" value="" required="true"/>
-				Telephone: <input type="tel" name="telephone" value=""</>
-				Term Date: <input type="datetime" name=termdatetime value=""</>
-				Hire Date: <input type="datetime" name=hiredatetime value=""</>
-				Supervisor Name:<input type="text" name="Sname" value=""</>
-				Supervisor ID: <input type="text" name="SID" value="" required="true"/>
-				<input type="submit" value="Update"/>
-			</form>
-			
-			<!--list of contact made to respondent--!>
-	<div id="contacts">
-		<h3> Contacts made to Respondent</h3>
-		<ol class="all">
-			<li>
-				Date: <span class="contactdatetime">2013-22-02 04:04:09</span>
-				Status: <span class="contactstatus">Left Voicemail</span>
-				UID: <span class="uid">RID</span>
-				Name: <span class="Uname">User Name</span>
-			</li>
-			<li>
-				Date: <span class="contact_datetime">2013-22-02 04:04:09</span>
-				Status: <span class="contact_status">Survey Completed</span>
-				UID: <span class="uid">RID</span>
-				Name: <span class="Uname">User Name</span>
-			</li>
-			...
-		</ol>
-	</div>
-			<!--survey completed by respondent--!>
-	<div id="surveys">
-			<h3>Survey Completed by Respondent</h3>
-				<li>
-					Date: <span class="interviewdatetime">2013-24-02 04:14:09</span>
-					Survey ID: <span class="surveyid">SurveyID</span>
-					Completed by: <span class="Uname">User Name</span>
-					UID: <span class="uid">UID</span>
-				</li>
-				<li><a href="result.html">Survey Result</a></li>
-	</div>
+			  <!--list of contact made to respondent-->
+	      <div id="contacts">
+		      <h3> Contacts made to Respondent</h3>
+		      <ol class="all">
+			      <li>
+				      Date: <span class="contactdatetime">2013-22-02 04:04:09</span>
+				      Status: <span class="contactstatus">Left Voicemail</span>
+				      UID: <span class="uid">RID</span>
+				      Name: <span class="Uname">User Name</span>
+			      </li>
+			      <li>
+				      Date: <span class="contact_datetime">2013-22-02 04:04:09</span>
+				      Status: <span class="contact_status">Survey Completed</span>
+				      UID: <span class="uid">RID</span>
+				      Name: <span class="Uname">User Name</span>
+			      </li>
+		      </ol>
+	      </div>
+
+			  <!--survey completed by respondent-->
+	      <div id="surveys">
+			    <h3>Survey Completed by Respondent</h3>
+				  <li>
+					  Date: <span class="interviewdatetime">2013-24-02 04:14:09</span>
+					  Survey ID: <span class="surveyid">SurveyID</span>
+					  Completed by: <span class="Uname">User Name</span>
+					  UID: <span class="uid">UID</span>
+				  </li>
+				  <li><a href="result.html">Survey Result</a></li>
+	      </div>
+
+		  </li>
+	  </ul>
+  </div>
 </html>
