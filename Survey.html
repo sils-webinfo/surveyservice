@@ -6,12 +6,12 @@
 <div id ="survey">
 	<form method ="post" action="/results" class="survey">
   <ul>
-		<li>Interview ID: <input type="text" name="intid" value="" required="true"/>
-			User:<input type="text" name="uname" value="" required="true"/>
-			UID:<input type="text" name="uid" value="" required="true"/>
+		<li>Interview ID: <input type="text" name="intid" value="" required/>
+			User:<input type="text" name="uname" value="" required/>
+			UID:<input type="text" name="uid" value="" required/>
 		</li>
-		<li>Respondent:<input type="text" name="rname" value="" required="true"/>
-			RID:<input type="text" name="rid" value="" required="true"/>
+		<li>Respondent:<input type="text" name="rname" value="" required/>
+			RID:<input type="text" name="rid" value="" required/>
 			Termination Date:<input type="datetime" name="termdatetime" value=""/>
 			Hire Date:<input type="datetime" name="hiredatetime" value=""/>
 			Supervisor:<input type="text" name="supname" value=""/>
@@ -37,7 +37,7 @@
 		</form>
 	</div>
 	<h3> Remove a Question </h3>
-	<a rel="http://sils-webinfo.github.io/surveyservice/edit" action="/survey" href="survey/questions">RemoveQuestion</a>			
+	<a rel="http://sils-webinfo.github.io/surveyservice/edit" href="survey/questions">RemoveQuestion</a>			
 </html>
 	
 			
