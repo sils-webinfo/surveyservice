@@ -1,38 +1,40 @@
+<!DOCTYPE html>
 <html>
-<!-- display a list of respondents  --!>
+<meta charset="UTF-8">
+<title>List of All Respondents</title>
+<!-- display a list of respondents  -->
 <h2>List of All Respondents </h2>
 	<div id ="respondents">
 	<ol class="all">
 		<li class="respondent">
-			<a rel="respondent" href="RID.html">Respondent1</a>
+			<a rel="http://sils-webinfo.github.io/surveyservice/respondent" href="RID.html">Respondent1</a>
 			<span class="rid">RespondentID</span>
 			<span class="termdate">Termination Date</span>
-			<a rel="contact" action="/contacts" href="Contacts.html">Contacts</a>
-			<a rel="survey" action="/surveys" href="Survey.html">Start Survey</a>
-			<a rel="result" action="/results" href="result.html">Survey Result</a>
+			<a rel="http://sils-webinfo.github.io/surveyservice/contact" href="Contacts.html">Contacts</a>
+			<a rel="http://sils-webinfo.github.io/surveyservice/survey" href="Survey.html">Start Survey</a>
+			<a rel="http://sils-webinfo.github.io/surveyservice/result" href="result.html">Survey Result</a>
 		</li>
-		...
 		<li class="respondent">
-			<a rel="respondent" href="RID.html">RespondentN</a>
+			<a rel="http://sils-webinfo.github.io/surveyservice/respondent" href="RID.html">RespondentN</a>
 			<span class="rid">RespondentID</span>
 			<span class="termdate">Termination Date</span>
-			<a rel="contacts"  action="/contacts" href="Contacts.html">Contacts</a>
-			<a rel="surveys" action="/surveys" href="Survey.html">Start Survey</a>
-			<a rel="result" action="/results" href="result.html">Survey Result</a>
+			<a rel="http://sils-webinfo.github.io/surveyservice/contacts" href="Contacts.html">Contacts</a>
+			<a rel="http://sils-webinfo.github.io/surveyservice/surveys" href="Survey.html">Start Survey</a>
+			<a rel="http://sils-webinfo.github.io/surveyservice/result" href="result.html">Survey Result</a>
 		</li>
 	</ol>
 	</div>
 
-<!-- create a new respondent  --!>
+<!-- create a new respondent  -->
 	<h2> Add/Update Respondent</h2>
 	<form method ="post" action="/respondents" class="respondent-add">
-		Respondent Name: <input type="text" name="rname" value="" required="true"</>
-		ID: <input type="text" name="rid" value="" required="true"</>
-		Termination Date: <input type="datetime" name="termdatetime" value=""</>
-		Hire Date: <input type="datetime" name="hiredatetime" value=""</>
-		Supervisor: <input type="text" name="supname" value=""</>
-		Supervisor ID: <input type="text" name="supid" value=""</>
-		<input type="submit"</>
+		Respondent Name: <input type="text" name="rname" value="" required >
+		ID: <input type="text" name="rid" value="" required >
+		Termination Date: <input type="datetime" name="termdatetime" value="">
+		Hire Date: <input type="datetime" name="hiredatetime" value="">
+		Supervisor: <input type="text" name="supname" value="">
+		Supervisor ID: <input type="text" name="supid" value="">
+		<input type="submit">
 	</form>
 
 </html>
