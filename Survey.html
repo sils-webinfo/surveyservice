@@ -1,7 +1,11 @@
+<!DOCTYPE html>
 <html>
+<meta charset="UTF-8">
+<title>Survey</title>
 <h1>Survey </h1>
 <div id ="survey">
 	<form method ="post" action="/results" class="survey">
+  <ul>
 		<li>Interview ID: <input type="text" name="intid" value="" required="true"/>
 			User:<input type="text" name="uname" value="" required="true"/>
 			UID:<input type="text" name="uid" value="" required="true"/>
@@ -13,6 +17,7 @@
 			Supervisor:<input type="text" name="supname" value=""/>
 			Supervisor ID:<input type="text" name="sid" value=""/>
 		</li>
+  </ul>
 		<ol>
 			<li>Q1 Text:<input type="text" name="Q1response" value=""/></li>
 			<li>Q2 Text:<input type="text" name="Q2response" value=""/></li>
@@ -32,7 +37,7 @@
 		</form>
 	</div>
 	<h3> Remove a Question </h3>
-	<a rel="edit" action="/survey" href="survey/questions">RemoveQuestion</>			
+	<a rel="http://sils-webinfo.github.io/surveyservice/edit" action="/survey" href="survey/questions">RemoveQuestion</a>			
 </html>
 	
 			
